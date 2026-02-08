@@ -16,6 +16,12 @@ An intelligent, bilingual (English/French) AI receptionist that handles incoming
 - **Montreal Market Knowledge** - Expertise in Westmount, Plateau, Griffintown, downtown condos
 
 ## 🏗️ Architecture
--**OpenAI Realtime Websocket** 
--**Twilio Web Socket**
--**Render**
+**Incoming Call (Twilio)
+↓
+WebSocket Media Stream
+↓
+FastAPI Server (Render)
+↓
+OpenAI Realtime API (GPT-4o)
+↓
+Google Sheets (CRM) + Google Calendar**
